@@ -1,5 +1,5 @@
 # Hackaton_IoT_Agosto_2025
-Proyecto presentado para la Categoria IoT en la Hackaton de Penguin Academy Agosto 2025
+Proyecto ganador del 1er lugar en la categoría IoT - Hackaton de Penguin Academy Agosto 2025
 
 #  Sistema de Estacionamiento Inteligente
 
