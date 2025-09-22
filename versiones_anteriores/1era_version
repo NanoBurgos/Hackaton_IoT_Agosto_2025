@@ -1,0 +1,99 @@
+//estacionamiento 1
+const int pinBoton1 = 2;
+const int ledVerde1 = 3;
+const int ledRojo1 = 4;
+
+//estacionamiento 2
+const int pinBoton2 = 5;
+const int ledVerde2 = 6;
+const int ledRojo2 = 7;
+
+//estacionamiento 3
+const int pinBoton3 = 8;
+const int ledVerde3 = 9;
+const int ledRojo3 = 10;
+
+//estacionamiento 4
+const int pinBoton4 = 11;
+const int ledVerde4 = 12;
+const int ledRojo4 = 13;
+
+void setup() {
+  //Estacionamiento 1
+  pinMode(pinBoton1, INPUT_PULLUP);  // El botón conecta a GND
+  pinMode(ledVerde1, OUTPUT);
+  pinMode(ledRojo1, OUTPUT);
+
+  digitalWrite(ledVerde1, HIGH);   // Encender verde por defecto
+  digitalWrite(ledRojo1, LOW);     // Rojo apagado por defecto
+
+  //Estacionamiento 2
+  pinMode(pinBoton2, INPUT_PULLUP);  // El botón conecta a GND
+  pinMode(ledVerde2, OUTPUT);
+  pinMode(ledRojo2, OUTPUT);
+
+  digitalWrite(ledVerde2, HIGH);   // Encender verde por defecto
+  digitalWrite(ledRojo2, LOW);     // Rojo apagado por defecto
+
+  //Estacionamiento 3
+  pinMode(pinBoton3, INPUT_PULLUP);  // El botón conecta a GND
+  pinMode(ledVerde3, OUTPUT);
+  pinMode(ledRojo3, OUTPUT);
+
+  digitalWrite(ledVerde3, HIGH);   // Encender verde por defecto
+  digitalWrite(ledRojo3, LOW);     // Rojo apagado por defecto
+
+  //Estacionamiento 4
+  pinMode(pinBoton4, INPUT_PULLUP);  // El botón conecta a GND
+  pinMode(ledVerde4, OUTPUT);
+  pinMode(ledRojo4, OUTPUT);
+
+  digitalWrite(ledVerde4, HIGH);   // Encender verde por defecto
+  digitalWrite(ledRojo4, LOW);     // Rojo apagado por defecto
+}
+
+void loop() {
+  //Estacionamiento 1
+  if (digitalRead(pinBoton1) == LOW) {
+    // Botón presionado
+    digitalWrite(ledVerde1, LOW);
+    digitalWrite(ledRojo1, HIGH);
+  } else {
+    // Botón no presionado
+    digitalWrite(ledVerde1, HIGH);
+    digitalWrite(ledRojo1, LOW);
+  }
+
+  //Estacionamiento 2
+  if (digitalRead(pinBoton2) == LOW) {
+    // Botón presionado
+    digitalWrite(ledVerde2, LOW);
+    digitalWrite(ledRojo2, HIGH);
+  } else {
+    // Botón no presionado
+    digitalWrite(ledVerde2, HIGH);
+    digitalWrite(ledRojo2, LOW);
+  }
+
+  //Estacionamiento 3
+  if (digitalRead(pinBoton3) == LOW) {
+    // Botón presionado
+    digitalWrite(ledVerde3, LOW);
+    digitalWrite(ledRojo3, HIGH);
+  } else {
+    // Botón no presionado
+    digitalWrite(ledVerde3, HIGH);
+    digitalWrite(ledRojo3, LOW);
+  }
+
+  //Estacionamiento 4
+  if (digitalRead(pinBoton4) == LOW) {
+    // Botón presionado
+    digitalWrite(ledVerde4, LOW);
+    digitalWrite(ledRojo4, HIGH);
+  } else {
+    // Botón no presionado
+    digitalWrite(ledVerde4, HIGH);
+    digitalWrite(ledRojo4, LOW);
+  }
+}
